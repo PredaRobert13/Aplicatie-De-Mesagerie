@@ -34,4 +34,11 @@ public class UsersController : ControllerBase
 
         return Ok(new { message = "Login successful." });
     }
+    [HttpGet("all")]
+    public ActionResult<List<string>> GetUsersnames()
+    {
+        var username = users.Select(u => u.Username).ToList();
+        return Ok(username);
+    }
+    
 }
