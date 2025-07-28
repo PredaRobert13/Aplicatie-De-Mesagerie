@@ -48,6 +48,7 @@ F:\Aplicatii C#\RestfulAPPS\MessagingApp\obj\Debug\net9.0\MessagingApp.AssemblyI
 F:\Aplicatii C#\RestfulAPPS\MessagingApp\obj\Debug\net9.0\MessagingApp.csproj.CoreCompileInputs.cache
 F:\Aplicatii C#\RestfulAPPS\MessagingApp\obj\Debug\net9.0\MessagingApp.MvcApplicationPartsAssemblyInfo.cs
 F:\Aplicatii C#\RestfulAPPS\MessagingApp\obj\Debug\net9.0\MessagingApp.MvcApplicationPartsAssemblyInfo.cache
+F:\Aplicatii C#\RestfulAPPS\MessagingApp\obj\Debug\net9.0\MessagingApp.sourcelink.json
 F:\Aplicatii C#\RestfulAPPS\MessagingApp\obj\Debug\net9.0\rjimswa.dswa.cache.json
 F:\Aplicatii C#\RestfulAPPS\MessagingApp\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 F:\Aplicatii C#\RestfulAPPS\MessagingApp\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
