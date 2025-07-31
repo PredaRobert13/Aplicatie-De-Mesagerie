@@ -2,34 +2,35 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using MessagingApp.Models;
 using System.Collections.Generic;
-using System.Linq;
+using System.Linq;using MessagingApp.Data;
+
 
 [ApiController]
 [Route("[controller]")]
 public class UsersController : ControllerBase
 {
-    private static List<User> users = new List<User>
+   private readonly AppDbContext user;
+   public UsersController(AppDbContext user)
     {
-        new User { Id = 1, Username = "admin", Password = "1234" }
-    };
+        this.user = user;
+    }
 
     [HttpPost("register")]
     public IActionResult Register(User newUser)
     {
-        var exists = users.Any(u => u.Username == newUser.Username);
+        var exists = user.Users.Any(u => u.Username == newUser.Username);
         if (exists)
             return BadRequest("Username already taken.");
-
-        newUser.Id = users.Count + 1;
-        users.Add(newUser);
-        return Ok(new { message = "User registered successfully." });
+        user.Users.Add(newUser);
+        user.SaveChanges();
+        return Ok();
     }
 
     [HttpPost("login")]
     public IActionResult Login(User loginUser)
     {
-        var user = users.FirstOrDefault(u => u.Username == loginUser.Username && u.Password == loginUser.Password);
-        if (user == null)
+        var user_login = user.Users.FirstOrDefault(u => u.Username == loginUser.Username && u.Password == loginUser.Password);
+        if (user_login == null)
             return Unauthorized();
 
         return Ok(new { message = "Login successful." });
@@ -37,7 +38,7 @@ public class UsersController : ControllerBase
     [HttpGet("all")]
     public ActionResult<List<string>> GetUsersnames()
     {
-        var username = users.Select(u => u.Username).ToList();
+        var username = user.Users.Select(u => u.Username).ToList();
         return Ok(username);
     }
     

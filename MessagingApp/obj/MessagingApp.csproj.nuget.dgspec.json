@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Aplicatii C#\\RestfulAPPS\\MessagingApp\\MessagingApp.csproj": {}
+    "D:\\Aplicatii C#\\MESSAGEAPP\\RestfulAPPS\\MessagingApp\\MessagingApp.csproj": {}
   },
   "projects": {
-    "F:\\Aplicatii C#\\RestfulAPPS\\MessagingApp\\MessagingApp.csproj": {
+    "D:\\Aplicatii C#\\MESSAGEAPP\\RestfulAPPS\\MessagingApp\\MessagingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Aplicatii C#\\RestfulAPPS\\MessagingApp\\MessagingApp.csproj",
+        "projectUniqueName": "D:\\Aplicatii C#\\MESSAGEAPP\\RestfulAPPS\\MessagingApp\\MessagingApp.csproj",
         "projectName": "MessagingApp",
-        "projectPath": "F:\\Aplicatii C#\\RestfulAPPS\\MessagingApp\\MessagingApp.csproj",
-        "packagesPath": "C:\\Users\\Roby\\.nuget\\packages\\",
-        "outputPath": "F:\\Aplicatii C#\\RestfulAPPS\\MessagingApp\\obj\\",
+        "projectPath": "D:\\Aplicatii C#\\MESSAGEAPP\\RestfulAPPS\\MessagingApp\\MessagingApp.csproj",
+        "packagesPath": "C:\\Users\\preda\\.nuget\\packages\\",
+        "outputPath": "D:\\Aplicatii C#\\MESSAGEAPP\\RestfulAPPS\\MessagingApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Roby\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\preda\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -47,6 +47,16 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.7, )"
             }
           },
           "imports": [
