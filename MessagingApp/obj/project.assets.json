@@ -4774,19 +4774,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\preda\\.nuget\\packages\\": {}
+    "C:\\Users\\Roby\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Aplicatii C#\\MESSAGEAPP\\RestfulAPPS\\MessagingApp\\MessagingApp.csproj",
+      "projectUniqueName": "C:\\Users\\Roby\\OneDrive\\Desktop\\RestfulAPPS\\MessagingApp\\MessagingApp.csproj",
       "projectName": "MessagingApp",
-      "projectPath": "D:\\Aplicatii C#\\MESSAGEAPP\\RestfulAPPS\\MessagingApp\\MessagingApp.csproj",
-      "packagesPath": "C:\\Users\\preda\\.nuget\\packages\\",
-      "outputPath": "D:\\Aplicatii C#\\MESSAGEAPP\\RestfulAPPS\\MessagingApp\\obj\\",
+      "projectPath": "C:\\Users\\Roby\\OneDrive\\Desktop\\RestfulAPPS\\MessagingApp\\MessagingApp.csproj",
+      "packagesPath": "C:\\Users\\Roby\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Roby\\OneDrive\\Desktop\\RestfulAPPS\\MessagingApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\preda\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Roby\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"

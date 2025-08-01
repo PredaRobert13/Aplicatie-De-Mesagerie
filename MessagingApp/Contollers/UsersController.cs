@@ -21,6 +21,7 @@ public class UsersController : ControllerBase
         var exists = user.Users.Any(u => u.Username == newUser.Username);
         if (exists)
             return BadRequest("Username already taken.");
+
         user.Users.Add(newUser);
         user.SaveChanges();
         return Ok();
@@ -32,7 +33,6 @@ public class UsersController : ControllerBase
         var user_login = user.Users.FirstOrDefault(u => u.Username == loginUser.Username && u.Password == loginUser.Password);
         if (user_login == null)
             return Unauthorized();
-
         return Ok(new { message = "Login successful." });
     }
     [HttpGet("all")]
